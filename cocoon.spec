@@ -135,7 +135,7 @@ mv -f org/apache/cocoon/processor/xsp/library/* \
 
 install index.html $RPM_BUILD_ROOT/home/httpd/%{name}
 
-install %{SOURCE1} $RPM_BUILD_ROOT/%{_datadir}/%{name}/conf/web.xml
+install %{SOURCE1} $RPM_BUILD_ROOT%{_datadir}/%{name}/conf/web.xml
 install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/%{name}/conf/webapp.conf
 install %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/%{name}/conf/cocoon.properties
 
