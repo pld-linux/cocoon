@@ -160,16 +160,16 @@ processor.xsp.repository = /var/lib/cocoon/repository
 #   processor.xsp.logicsheet.<namespace-tag>.<language> = URL to file
 # where "URL to file" is usually starting with file:// if you locate
 # your custom library in your file system.
-# processor.xsp.logicsheet.context.java  = resource://org/apache/cocoon/processor/xsp/library/java/context.xsl
-# processor.xsp.logicsheet.cookie.java   = resource://org/apache/cocoon/processor/xsp/library/java/cookie.xsl
-# processor.xsp.logicsheet.global.java   = resource://org/apache/cocoon/processor/xsp/library/java/global.xsl
-# processor.xsp.logicsheet.request.java  = resource://org/apache/cocoon/processor/xsp/library/java/request.xsl
-# processor.xsp.logicsheet.response.java = resource://org/apache/cocoon/processor/xsp/library/java/response.xsl
-# processor.xsp.logicsheet.session.java  = resource://org/apache/cocoon/processor/xsp/library/java/session.xsl
-# processor.xsp.logicsheet.util.java     = resource://org/apache/cocoon/processor/xsp/library/java/util.xsl
-# processor.xsp.logicsheet.sql.java      = resource://org/apache/cocoon/processor/xsp/library/sql/sql.xsl
-# processor.xsp.logicsheet.esql.java      = resource://org/apache/cocoon/processor/xsp/library/sql/esql.xsl
-# processor.xsp.logicsheet.fp.java       = resource://org/apache/cocoon/processor/xsp/library/fp/fp.xsl
+processor.xsp.logicsheet.context.java  = file:///usr/share/cocoon/xsp-library/java/context.xsl
+processor.xsp.logicsheet.cookie.java   = file:///usr/share/cocoon/xsp-library/java/cookie.xsl
+processor.xsp.logicsheet.global.java   = file:///usr/share/cocoon/xsp-library/java/global.xsl
+processor.xsp.logicsheet.request.java  = file:///usr/share/cocoon/xsp-library/java/request.xsl
+processor.xsp.logicsheet.response.java = file:///usr/share/cocoon/xsp-library/java/response.xsl
+processor.xsp.logicsheet.session.java  = file:///usr/share/cocoon/xsp-library/java/session.xsl
+processor.xsp.logicsheet.util.java     = file:///usr/share/cocoon/xsp-library/java/util.xsl
+processor.xsp.logicsheet.sql.java      = file:///usr/share/cocoon/xsp-library/sql/sql.xsl
+processor.xsp.logicsheet.esql.java      = file:///usr/share/cocoon/xsp-library/sql/esql.xsl
+processor.xsp.logicsheet.fp.java       = file:///usr/share/cocoon/xsp-library/fp/fp.xsl
 
 # Turbine DB Connection Pool
 ############################
