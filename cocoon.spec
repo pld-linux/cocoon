@@ -16,7 +16,7 @@ Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
 Patch0:		%{name}-paths.patch
 URL:		http://xml.apache.org/cocoon/
-Requires:	java >= 1.1
+Requires:	jre >= 1.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
