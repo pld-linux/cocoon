@@ -10,10 +10,6 @@ Version:	1.8.2
 Release:	3
 License:	Apache
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(es):	Aplicaciones/Editoración/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
-Group(pt_BR):	Aplicações/Editoração/XML/Java
 Source0:	http://xml.apache.org/cocoon/dist/Cocoon-%{version}.tar.gz
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
@@ -38,10 +34,6 @@ dostarczyæ zawarto¶æ stron WWW.
 Summary:	Online manual for Cocoon
 Summary(pl):	Podrêcznik online do Cocoona
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(es):	Aplicaciones/Editoración/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
-Group(pt_BR):	Aplicações/Editoração/XML/Java
 
 %description doc
 Documentation for Cocoon, viewable through your web server, too.
@@ -53,10 +45,6 @@ Dokumentacja do Cocoona, daj±ca siê ogl±daæ tak¿e przez serwer WWW.
 Summary:	Optional jars for cocoon
 Summary(pl):	Opcjonalne pakiety do Cocoona
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(es):	Aplicaciones/Editoración/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
-Group(pt_BR):	Aplicações/Editoração/XML/Java
 Requires:	%{name} = %{version}
 
 %description optional
@@ -75,10 +63,6 @@ Dodatkowa funkcjonalno¶æ do Cocoona:
 Summary:	Fixes error reporting bug
 Summary(pl):	Poprawia b³±d przy raportowaniu b³êdu
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(es):	Aplicaciones/Editoración/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
-Group(pt_BR):	Aplicações/Editoração/XML/Java
 Requires:	%{name} = %{version}
 
 %description sax-bugfix
@@ -99,10 +83,6 @@ violations", spróbuj usun±æ j± z CLASSPATH.
 Summary:	Samples for cocoon
 Summary(pl):	Przyk³ady do Cocoona
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(es):	Aplicaciones/Editoración/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
-Group(pt_BR):	Aplicações/Editoração/XML/Java
 Requires:	%{name} = %{version}
 
 %description samples
@@ -121,10 +101,6 @@ serwis WWW.
 Summary:	Documentation for cocoon in XML
 Summary(pl):	Dokumentacja do Cocoona w XML
 Group:		Applications/Publishing/XML/Java
-Group(de):	Applikationen/Publizieren/XML/Java
-Group(es):	Aplicaciones/Editoración/XML/Java
-Group(pl):	Aplikacje/Publikowanie/XML/Java
-Group(pt_BR):	Aplicações/Editoração/XML/Java
 Requires:	%{name} = %{version}
 
 %description xmldoc
