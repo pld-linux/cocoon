@@ -142,8 +142,6 @@ cp -R samples $RPM_BUILD_ROOT/home/httpd/%{name}
 mv -f {todo,changes}.xml xdocs
 cp -Rf xdocs $RPM_BUILD_ROOT/home/httpd/%{name}
 
-gzip -9nf LICENSE README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -177,7 +175,7 @@ rm -rf /home/httpd/%{name}/docs
 %{_datadir}/%{name}/lib/xalan_%{xalanver}.jar
 %{_datadir}/%{name}/lib/xerces_%{xercesver}.jar
 %{_datadir}/%{name}/xsp-library
-%doc LICENSE.gz README.gz
+%doc LICENSE README
 
 %files doc
 %defattr(644,root,root,755)
