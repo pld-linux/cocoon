@@ -6,7 +6,7 @@ diff -Nru cocoon-1.8.2.orig/conf/cocoon.properties cocoon-1.8.2/conf/cocoon.prop
  # the requested URI equals the specified one.
  selfservlet.enabled = true
 -selfservlet.uri = /Cocoon.xml
-+selfservlet.uri = /cocoon/Cocoon.xml
++selfservlet.uri = cocoon/Cocoon.xml
  
  # Indicates whether or not Cocoon should handle errors internally
  # and format the error and the exception stack trace to the client
