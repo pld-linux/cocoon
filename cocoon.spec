@@ -4,7 +4,7 @@
 %define xercesver 1_2
 
 Summary:	The servlet XML transformation system
-Summary(pl):	Serwletowy system transformacji XML
+Summary(pl):	Serwletowy system transformacji XML-a
 Name:		cocoon
 Version:	1.8.2
 Release:	3
@@ -76,10 +76,10 @@ removing it from your CLASSPATH.
 
 %description sax-bugfix -l pl
 sax-bugfix.jar jest opcjonaln±, nieoficjaln± poprawk± b³êdu - która
-mui byæ przed xercesem w CLASSPATH - pozwalaj±ca zobaczyæ numery linii
-i kolumn w komunikatach o b³êdach w parsowaniu XML, i jest potrzebna
-tylko na niektórych maszynach wirtualnych. Je¿eli dostajesz "sealing
-violations", spróbuj usun±æ j± z CLASSPATH.
+musi byæ przed xercesem w CLASSPATH - pozwalaj±c± zobaczyæ numery
+wierszy i kolumn w komunikatach o b³êdach w analizie sk³adniowej
+XML-a, i jest potrzebna tylko na niektórych maszynach wirtualnych.
+Je¿eli dostajesz "sealing violations", spróbuj usun±æ j± z CLASSPATH.
 
 %package samples
 Summary:	Samples for cocoon
@@ -101,7 +101,7 @@ serwis WWW.
 
 %package xmldoc
 Summary:	Documentation for cocoon in XML
-Summary(pl):	Dokumentacja do Cocoona w XML
+Summary(pl):	Dokumentacja do Cocoona w XML-u
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}
 
@@ -109,7 +109,7 @@ Requires:	%{name} = %{version}
 Documentation for cocoon in XML.
 
 %description xmldoc -l pl
-Dokumentacja do Cocoona w XML.
+Dokumentacja do Cocoona w XML-u.
 
 %prep
 %setup -q
