@@ -1,0 +1,42 @@
+diff -Nru cocoon-1.8.2.orig/conf/cocoon.properties cocoon-1.8.2/conf/cocoon.properties
+--- cocoon-1.8.2.orig/conf/cocoon.properties	Tue Sep 11 12:03:53 2001
++++ cocoon-1.8.2/conf/cocoon.properties	Tue Sep 11 12:15:45 2001
+@@ -16,7 +16,7 @@
+ # Indicates whether or not Cocoon should be visible if
+ # the requested URI equals the specified one.
+ selfservlet.enabled = true
+-selfservlet.uri = /Cocoon.xml
++selfservlet.uri = /cocoon/Cocoon.xml
+ 
+ # Indicates whether or not Cocoon should handle errors internally
+ # and format the error and the exception stack trace to the client
+@@ -153,7 +153,7 @@
+ # secret, we highly suggest that you protect the repository from untrusted
+ # access, even read-only. Only Cocoon and the system administrators should
+ # have access here.
+-processor.xsp.repository = ./repository
++processor.xsp.repository = /var/lib/cocoon/repository
+ 
+ # Set the libraries associated with the given namespace.
+ # Use the syntax:
+@@ -398,7 +398,7 @@
+ #Uncomment this to enable coarse performance profiling.
+ #Look at samples/profiler/profiler.xml to see the results of the profiler
+ 
+-#profiler.enabled=true
++profiler.enabled=true
+ 
+ #Comment this out to remove the <--this page was served ... comment from the
+ #end of text pages served by Cocoon
+diff -Nru cocoon-1.8.2.orig/index.html cocoon-1.8.2/index.html
+--- cocoon-1.8.2.orig/index.html	Tue Sep 11 12:03:59 2001
++++ cocoon-1.8.2/index.html	Tue Sep 11 12:16:18 2001
+@@ -20,7 +20,7 @@
+     <tr>
+       <td width="100%">
+         <ul>
+-          <li><font size="+1"><a href="/Cocoon.xml">Cocoon Status Page</a>(*)</font></li>
++          <li><font size="+1"><a href="Cocoon.xml">Cocoon Status Page</a>(*)</font></li>
+           <li><font size="+1"><a href="samples/index.xml">Live Samples</a>(*)</font></li>
+           <li><font size="+1"><a href="docs/index.html">Documentation</a></font></li>
+         </ul>
