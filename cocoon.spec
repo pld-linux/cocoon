@@ -11,7 +11,7 @@ Release:	3
 License:	Apache
 Group:		Applications/Publishing/XML/Java
 # new versions in http://www.apache.org/dist/cocoon/
-Source0:	http://www.apache.org/dist/cocoon/OLD/Cocoon-%{version}.tar.gz
+Source0:	http://www.apache.org/dist/cocoon/OLD/cocoon-%{version}.tar.gz
 # Source0-md5:	57fc25fcbc96f51cb684741651e94e30
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
