@@ -6,17 +6,15 @@
 Summary:	The servlet XML transformation system
 Name:		cocoon
 Version:	1.8.2
-Release:	1
+Release:	2
 License:	Apache
-Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
+Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
+Group(pl):	Aplikacje/Publikowanie/XML
 Source0:	http://xml.apache.org/cocoon/dist/Cocoon-%{version}.tar.gz
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
-Patch0:	%{name}-paths.patch
+Patch0:		%{name}-paths.patch
 URL:		http://xml.apache.org/cocoon/
 Requires:	java >= 1.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -27,22 +25,18 @@ Cocoon is a 100% pure Java publishing framework that relies on new W3C
 technologies (such as XML and XSL) to provide web content.
 
 %package doc
-Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
+Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
+Group(pl):	Aplikacje/Publikowanie/XML
 Summary:	Online manual for Cocoon
 
 %description doc
 Documentation for Cocoon, viewable through your web server, too.
 
 %package optional
-Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
+Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
+Group(pl):	Aplikacje/Publikowanie/XML
 Requires:	cocoon = %{version}
 Summary:	Optional jars for cocoon
 
@@ -53,11 +47,9 @@ Additional functionality for Cocoon:
  - fop - converts xsl:fo into PDF output
 
 %package sax-bugfix
-Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
+Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
+Group(pl):	Aplikacje/Publikowanie/XML
 Requires:	cocoon = %{version}
 Summary:	Fixes error reporting bug
 
@@ -69,26 +61,22 @@ needed on some virtual machines. If you get "sealing violations", try
 removing it from your CLASSPATH.
 
 %package samples
-Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
+Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
+Group(pl):	Aplikacje/Publikowanie/XML
 Requires:	cocoon = %{version}
 Summary:	Samples for cocoon
 
 %description samples
-This directory contains samples to show you the power of the Cocoon Publishing
-Framework. Each subdirectory contains examples of possible uses that should
-give you insights on Cocoon capabilities as well as real-life suggestions on
-how to XML-ize your web-serving environment.
+This directory contains samples to show you the power of the Cocoon
+Publishing Framework. Each subdirectory contains examples of possible
+uses that should give you insights on Cocoon capabilities as well as
+real-life suggestions on how to XML-ize your web-serving environment.
 
 %package xmldoc
-Group:		Networking/Utilities
-Group(de):	Netzwerkwesen/Werkzeuge
-Group(es):	Red/Utilitarios
-Group(pl):	Sieciowe/Narzêdzia
-Group(pt_BR):	Rede/Utilitários
+Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
+Group(pl):	Aplikacje/Publikowanie/XML
 Requires:	cocoon = %{version}
 Summary:	Documentation for cocoon in XML
 
