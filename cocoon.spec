@@ -10,7 +10,9 @@ Version:	1.8.2
 Release:	3
 License:	Apache
 Group:		Applications/Publishing/XML/Java
-Source0:	http://xml.apache.org/cocoon/dist/Cocoon-%{version}.tar.gz
+# new versions in http://www.apache.org/dist/cocoon/
+Source0:	http://www.apache.org/dist/cocoon/OLD/Cocoon-%{version}.tar.gz
+# Source0-md5:	57fc25fcbc96f51cb684741651e94e30
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
 Source3:	%{name}-properties
