@@ -94,7 +94,7 @@ uses that should give you insights on Cocoon capabilities as well as
 real-life suggestions on how to XML-ize your web-serving environment.
 
 %description samples -l pl
-Ten pakiet zawieraa przyk³ady pokazuj±ce si³ê ¦rodowiska Publikacji
+Ten pakiet zawiera przyk³ady pokazuj±ce si³ê ¦rodowiska Publikacji
 Cocoon. Ka¿dy podkatalog zawiera przyk³ady mo¿liwych sposobów
 wykorzystania mo¿liwo¶ci Cocoona oraz sugestie, jak z-XML-izowaæ swój
 serwis WWW.
