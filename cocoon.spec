@@ -8,9 +8,9 @@ Name:		cocoon
 Version:	1.8.2
 Release:	2
 License:	Apache
-Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
+Group:		Applications/Publishing/XML/Java
+Group(de):	Applikationen/Publizieren/XML/Java
+Group(pl):	Aplikacje/Publikowanie/XML/Java
 Source0:	http://xml.apache.org/cocoon/dist/Cocoon-%{version}.tar.gz
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
@@ -25,18 +25,18 @@ Cocoon is a 100% pure Java publishing framework that relies on new W3C
 technologies (such as XML and XSL) to provide web content.
 
 %package doc
-Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
+Group:		Applications/Publishing/XML/Java
+Group(de):	Applikationen/Publizieren/XML/Java
+Group(pl):	Aplikacje/Publikowanie/XML/Java
 Summary:	Online manual for Cocoon
 
 %description doc
 Documentation for Cocoon, viewable through your web server, too.
 
 %package optional
-Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
+Group:		Applications/Publishing/XML/Java
+Group(de):	Applikationen/Publizieren/XML/Java
+Group(pl):	Aplikacje/Publikowanie/XML/Java
 Requires:	cocoon = %{version}
 Summary:	Optional jars for cocoon
 
@@ -47,9 +47,9 @@ Additional functionality for Cocoon:
  - fop - converts xsl:fo into PDF output
 
 %package sax-bugfix
-Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
+Group:		Applications/Publishing/XML/Java
+Group(de):	Applikationen/Publizieren/XML/Java
+Group(pl):	Aplikacje/Publikowanie/XML/Java
 Requires:	cocoon = %{version}
 Summary:	Fixes error reporting bug
 
@@ -61,9 +61,9 @@ needed on some virtual machines. If you get "sealing violations", try
 removing it from your CLASSPATH.
 
 %package samples
-Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
+Group:		Applications/Publishing/XML/Java
+Group(de):	Applikationen/Publizieren/XML/Java
+Group(pl):	Aplikacje/Publikowanie/XML/Java
 Requires:	cocoon = %{version}
 Summary:	Samples for cocoon
 
@@ -74,9 +74,9 @@ uses that should give you insights on Cocoon capabilities as well as
 real-life suggestions on how to XML-ize your web-serving environment.
 
 %package xmldoc
-Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
+Group:		Applications/Publishing/XML/Java
+Group(de):	Applikationen/Publizieren/XML/Java
+Group(pl):	Aplikacje/Publikowanie/XML/Java
 Requires:	cocoon = %{version}
 Summary:	Documentation for cocoon in XML
 
