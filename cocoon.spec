@@ -6,7 +6,7 @@
 Summary:	The servlet XML transformation system
 Name:		cocoon
 Version:	1.8.2
-Release:	2
+Release:	3
 License:	Apache
 Group:		Applications/Publishing/XML/Java
 Group(de):	Applikationen/Publizieren/XML/Java
@@ -14,11 +14,13 @@ Group(pl):	Aplikacje/Publikowanie/XML/Java
 Source0:	http://xml.apache.org/cocoon/dist/Cocoon-%{version}.tar.gz
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
+Source3:	%{name}-properties
 Patch0:		%{name}-paths.patch
 URL:		http://xml.apache.org/cocoon/
 Requires:	jre >= 1.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
+BuildRequires: jar
 
 %description
 Cocoon is a 100% pure Java publishing framework that relies on new W3C
@@ -92,7 +94,7 @@ Documentation for cocoon in XML
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/%{name} \
-	$RPM_BUILD_ROOT%{_datadir}/%{name}/{lib,conf} \
+	$RPM_BUILD_ROOT%{_datadir}/%{name}/{lib,conf,xsp-library} \
 	$RPM_BUILD_ROOT/home/httpd/%{name}/WEB-INF \
 	$RPM_BUILD_ROOT%{_localstatedir}/lib/%{name}/repository
 
@@ -103,11 +105,15 @@ cp lib/{bsfengines,bsf,fop_%{fopver}}.jar \
 	$RPM_BUILD_ROOT%{_datadir}/%{name}/lib
 cp lib/sax-bugfix.jar $RPM_BUILD_ROOT%{_datadir}/%{name}/lib
 
+jar xf bin/cocoon.jar org/apache/cocoon/processor/xsp/library
+mv org/apache/cocoon/processor/xsp/library/* \
+	$RPM_BUILD_ROOT%{_datadir}/%{name}/xsp-library
+
 cp index.html $RPM_BUILD_ROOT/home/httpd/%{name}
 
-cp %{SOURCE1} $RPM_BUILD_ROOT/home/httpd/%{name}/WEB-INF/web.xml
-cp conf/cocoon.properties $RPM_BUILD_ROOT%{_datadir}/%{name}/conf
+cp %{SOURCE1} $RPM_BUILD_ROOT/%{_datadir}/%{name}/conf/web.xml
 cp %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/%{name}/conf/webapp.conf
+cp %{SOURCE3} $RPM_BUILD_ROOT%{_datadir}/%{name}/conf/cocoon.properties
 
 cp -R samples $RPM_BUILD_ROOT/home/httpd/%{name}
 
@@ -120,7 +126,7 @@ gzip -9nf LICENSE README
 rm -rf $RPM_BUILD_ROOT
 
 %post
-ln -sf %{_datadir}/%{name}/{lib,conf/cocoon.properties} /home/httpd/%{name}/WEB-INF
+ln -sf %{_datadir}/%{name}/conf/cocoon.properties /home/httpd/%{name}/WEB-INF
 
 %postun
 rm -rf /home/httpd/%{name}/WEB-INF/{lib,cocoon.properties}
@@ -135,14 +141,15 @@ rm -rf /home/httpd/%{name}/docs
 %defattr(644,root,root,755)
 %attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) %{_datadir}/%{name}/conf/cocoon.properties
 %attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) %{_datadir}/%{name}/conf/webapp.conf
-%attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) /home/httpd/%{name}/WEB-INF/web.xml
-%attr(0750,root,http) %dir %{_localstatedir}/lib/%{name}/repository
+%attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) %{_datadir}/%{name}/conf/web.xml
+%attr(0770,root,http) %dir %{_localstatedir}/lib/%{name}/repository
 /home/httpd/%{name}/index.html
 %{_datadir}/%{name}/lib/cocoon.jar
 %{_datadir}/%{name}/lib/turbine-pool.jar
 %{_datadir}/%{name}/lib/w3c.jar
 %{_datadir}/%{name}/lib/xalan_%{xalanver}.jar
 %{_datadir}/%{name}/lib/xerces_%{xercesver}.jar
+%{_datadir}/%{name}/xsp-library
 %doc LICENSE.gz README.gz
 
 %files doc
