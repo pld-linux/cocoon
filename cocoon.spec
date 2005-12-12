@@ -11,7 +11,7 @@ Release:	3
 License:	Apache
 Group:		Applications/Publishing/XML/Java
 # new versions in http://www.apache.org/dist/cocoon/
-Source0:	http://www.apache.org/dist/cocoon/OLD/cocoon-%{version}.tar.gz
+Source0:	http://www.apache.org/dist/cocoon/OLD/%{name}-%{version}.tar.gz
 # Source0-md5:	57fc25fcbc96f51cb684741651e94e30
 Source1:	%{name}-web.xml
 Source2:	%{name}-webapp.conf
@@ -163,11 +163,11 @@ rm -rf /home/httpd/%{name}/docs
 %defattr(644,root,root,755)
 %dir %{_datadir}/%{name}
 %dir %{_datadir}/%{name}/conf
-%attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) %{_datadir}/%{name}/conf/cocoon.properties
-%attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) %{_datadir}/%{name}/conf/webapp.conf
-%attr(0640,root,http) %config(noreplace) %verify(not size mtime md5) %{_datadir}/%{name}/conf/web.xml
+%attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_datadir}/%{name}/conf/cocoon.properties
+%attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_datadir}/%{name}/conf/webapp.conf
+%attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_datadir}/%{name}/conf/web.xml
 %dir %{_localstatedir}/lib/%{name}
-%attr(0770,root,http) %dir %{_localstatedir}/lib/%{name}/repository
+%attr(770,root,http) %dir %{_localstatedir}/lib/%{name}/repository
 %dir /home/httpd/%{name}
 /home/httpd/%{name}/index.html
 %dir %{_datadir}/%{name}/lib
