@@ -18,10 +18,10 @@ Source2:	%{name}-webapp.conf
 Source3:	%{name}-properties
 Patch0:		%{name}-paths.patch
 URL:		http://xml.apache.org/cocoon/
-Requires:	jre >= 1.1
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-BuildArch:	noarch
 BuildRequires:	jar
+Requires:	jre >= 1.1
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Cocoon is a 100% pure Java publishing framework that relies on new W3C
@@ -154,7 +154,7 @@ ln -sf %{_datadir}/%{name}/conf/cocoon.properties /home/httpd/%{name}/WEB-INF
 rm -rf /home/httpd/%{name}/WEB-INF/{lib,cocoon.properties}
 
 %post doc
-ln -sf %{_defaultdocdir}/%{name}-doc-%{version}/docs /home/httpd/%{name}
+ln -sf %{_docdir}/%{name}-doc-%{version}/docs /home/httpd/%{name}
 
 %postun doc
 rm -rf /home/httpd/%{name}/docs
