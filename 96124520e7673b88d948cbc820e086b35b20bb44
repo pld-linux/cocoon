@@ -1,0 +1,8 @@
+- Release: 3
+- added Requires: jar
+- added xsp-library with extracted processor.xsp.logicsheet files
+- bug in %post ln -s fixed
+- attributes of repository fixed to allow writing for gid=http
+- web.xml moved to %{_datadir}/%{name}/conf/web.xml
+- new webapp.conf -- web.xml is not necessary
+- added default cocoon.properties
