@@ -47,7 +47,7 @@ Dokumentacja do Cocoona, daj±ca siê ogl±daæ tak¿e przez serwer WWW.
 Summary:	Optional jars for cocoon
 Summary(pl):	Opcjonalne pakiety do Cocoona
 Group:		Applications/Publishing/XML/Java
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description optional
 Additional functionality for Cocoon:
@@ -65,7 +65,7 @@ Dodatkowa funkcjonalno¶æ do Cocoona:
 Summary:	Fixes error reporting bug
 Summary(pl):	Poprawia b³±d przy raportowaniu b³êdu
 Group:		Applications/Publishing/XML/Java
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description sax-bugfix
 Note The sax-bugfix.jar is an optional, unofficial bugfix - which must
@@ -85,7 +85,7 @@ Je¿eli dostajesz "sealing violations", spróbuj usun±æ j± z CLASSPATH.
 Summary:	Samples for cocoon
 Summary(pl):	Przyk³ady do Cocoona
 Group:		Applications/Publishing/XML/Java
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description samples
 This directory contains samples to show you the power of the Cocoon
@@ -103,7 +103,7 @@ serwis WWW.
 Summary:	Documentation for cocoon in XML
 Summary(pl):	Dokumentacja do Cocoona w XML-u
 Group:		Applications/Publishing/XML/Java
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description xmldoc
 Documentation for cocoon in XML.
