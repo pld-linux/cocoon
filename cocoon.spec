@@ -4,7 +4,7 @@
 %define xercesver 1_2
 
 Summary:	The servlet XML transformation system
-Summary(pl.UTF-8):   Serwletowy system transformacji XML-a
+Summary(pl.UTF-8):	Serwletowy system transformacji XML-a
 Name:		cocoon
 Version:	1.8.2
 Release:	3
@@ -34,7 +34,7 @@ dostarczyć zawartość stron WWW.
 
 %package doc
 Summary:	Online manual for Cocoon
-Summary(pl.UTF-8):   Podręcznik online do Cocoona
+Summary(pl.UTF-8):	Podręcznik online do Cocoona
 Group:		Applications/Publishing/XML/Java
 
 %description doc
@@ -45,7 +45,7 @@ Dokumentacja do Cocoona, dająca się oglądać także przez serwer WWW.
 
 %package optional
 Summary:	Optional jars for cocoon
-Summary(pl.UTF-8):   Opcjonalne pakiety do Cocoona
+Summary(pl.UTF-8):	Opcjonalne pakiety do Cocoona
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -63,7 +63,7 @@ Dodatkowa funkcjonalność do Cocoona:
 
 %package sax-bugfix
 Summary:	Fixes error reporting bug
-Summary(pl.UTF-8):   Poprawia błąd przy raportowaniu błędu
+Summary(pl.UTF-8):	Poprawia błąd przy raportowaniu błędu
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -83,7 +83,7 @@ Jeżeli dostajesz "sealing violations", spróbuj usunąć ją z CLASSPATH.
 
 %package samples
 Summary:	Samples for cocoon
-Summary(pl.UTF-8):   Przykłady do Cocoona
+Summary(pl.UTF-8):	Przykłady do Cocoona
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -101,7 +101,7 @@ serwis WWW.
 
 %package xmldoc
 Summary:	Documentation for cocoon in XML
-Summary(pl.UTF-8):   Dokumentacja do Cocoona w XML-u
+Summary(pl.UTF-8):	Dokumentacja do Cocoona w XML-u
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
