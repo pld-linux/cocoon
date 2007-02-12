@@ -4,7 +4,7 @@
 %define xercesver 1_2
 
 Summary:	The servlet XML transformation system
-Summary(pl):	Serwletowy system transformacji XML-a
+Summary(pl.UTF-8):   Serwletowy system transformacji XML-a
 Name:		cocoon
 Version:	1.8.2
 Release:	3
@@ -27,25 +27,25 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Cocoon is a 100% pure Java publishing framework that relies on new W3C
 technologies (such as XML and XSL) to provide web content.
 
-%description -l pl
-Cocoon jest napisanym w 100% w Javie ¶rodowiskiem publikowania, który
+%description -l pl.UTF-8
+Cocoon jest napisanym w 100% w Javie Å›rodowiskiem publikowania, ktÃ³ry
 polega na nowych technologiach W3C (takich jak XML i XSL), aby
-dostarczyæ zawarto¶æ stron WWW.
+dostarczyÄ‡ zawartoÅ›Ä‡ stron WWW.
 
 %package doc
 Summary:	Online manual for Cocoon
-Summary(pl):	Podrêcznik online do Cocoona
+Summary(pl.UTF-8):   PodrÄ™cznik online do Cocoona
 Group:		Applications/Publishing/XML/Java
 
 %description doc
 Documentation for Cocoon, viewable through your web server, too.
 
-%description doc -l pl
-Dokumentacja do Cocoona, daj±ca siê ogl±daæ tak¿e przez serwer WWW.
+%description doc -l pl.UTF-8
+Dokumentacja do Cocoona, dajÄ…ca siÄ™ oglÄ…daÄ‡ takÅ¼e przez serwer WWW.
 
 %package optional
 Summary:	Optional jars for cocoon
-Summary(pl):	Opcjonalne pakiety do Cocoona
+Summary(pl.UTF-8):   Opcjonalne pakiety do Cocoona
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -55,15 +55,15 @@ Additional functionality for Cocoon:
  - bsf - Bean Scripting Framework (Xalan existion functions)
  - fop - converts xsl:fo into PDF output
 
-%description optional -l pl
-Dodatkowa funkcjonalno¶æ do Cocoona:
+%description optional -l pl.UTF-8
+Dodatkowa funkcjonalnoÅ›Ä‡ do Cocoona:
  - bsfengines - Bean Scripting Framework (Xalan)
  - bsf - Bean Scription Framework (funkcje Xalan)
  - fop - konwertuje xsl:fo na PDF
 
 %package sax-bugfix
 Summary:	Fixes error reporting bug
-Summary(pl):	Poprawia b³±d przy raportowaniu b³êdu
+Summary(pl.UTF-8):   Poprawia bÅ‚Ä…d przy raportowaniu bÅ‚Ä™du
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -74,16 +74,16 @@ numbers and column numbers in XML parsing error messages, and is only
 needed on some virtual machines. If you get "sealing violations", try
 removing it from your CLASSPATH.
 
-%description sax-bugfix -l pl
-sax-bugfix.jar jest opcjonaln±, nieoficjaln± poprawk± b³êdu - która
-musi byæ przed xercesem w CLASSPATH - pozwalaj±c± zobaczyæ numery
-wierszy i kolumn w komunikatach o b³êdach w analizie sk³adniowej
-XML-a, i jest potrzebna tylko na niektórych maszynach wirtualnych.
-Je¿eli dostajesz "sealing violations", spróbuj usun±æ j± z CLASSPATH.
+%description sax-bugfix -l pl.UTF-8
+sax-bugfix.jar jest opcjonalnÄ…, nieoficjalnÄ… poprawkÄ… bÅ‚Ä™du - ktÃ³ra
+musi byÄ‡ przed xercesem w CLASSPATH - pozwalajÄ…cÄ… zobaczyÄ‡ numery
+wierszy i kolumn w komunikatach o bÅ‚Ä™dach w analizie skÅ‚adniowej
+XML-a, i jest potrzebna tylko na niektÃ³rych maszynach wirtualnych.
+JeÅ¼eli dostajesz "sealing violations", sprÃ³buj usunÄ…Ä‡ jÄ… z CLASSPATH.
 
 %package samples
 Summary:	Samples for cocoon
-Summary(pl):	Przyk³ady do Cocoona
+Summary(pl.UTF-8):   PrzykÅ‚ady do Cocoona
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
@@ -93,22 +93,22 @@ Publishing Framework. Each subdirectory contains examples of possible
 uses that should give you insights on Cocoon capabilities as well as
 real-life suggestions on how to XML-ize your web-serving environment.
 
-%description samples -l pl
-Ten pakiet zawiera przyk³ady pokazuj±ce si³ê ¦rodowiska Publikacji
-Cocoon. Ka¿dy podkatalog zawiera przyk³ady mo¿liwych sposobów
-wykorzystania mo¿liwo¶ci Cocoona oraz sugestie, jak z-XML-izowaæ swój
+%description samples -l pl.UTF-8
+Ten pakiet zawiera przykÅ‚ady pokazujÄ…ce siÅ‚Ä™ Åšrodowiska Publikacji
+Cocoon. KaÅ¼dy podkatalog zawiera przykÅ‚ady moÅ¼liwych sposobÃ³w
+wykorzystania moÅ¼liwoÅ›ci Cocoona oraz sugestie, jak z-XML-izowaÄ‡ swÃ³j
 serwis WWW.
 
 %package xmldoc
 Summary:	Documentation for cocoon in XML
-Summary(pl):	Dokumentacja do Cocoona w XML-u
+Summary(pl.UTF-8):   Dokumentacja do Cocoona w XML-u
 Group:		Applications/Publishing/XML/Java
 Requires:	%{name} = %{version}-%{release}
 
 %description xmldoc
 Documentation for cocoon in XML.
 
-%description xmldoc -l pl
+%description xmldoc -l pl.UTF-8
 Dokumentacja do Cocoona w XML-u.
 
 %prep
